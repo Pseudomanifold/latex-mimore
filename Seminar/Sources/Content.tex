@@ -1,0 +1,110 @@
+\section{Adding content}
+
+This source is in a separate file to demonstrate how to \verb|include|
+things. It is good style to let a new section begin on a new page. But
+you do not have to do this, of course. If you write longer text, make
+judicious use of paragraph breaks by adding newlines. For example, this
+is the last line of the paragraph.
+
+And now a new paragraph begins. The short indent of the new paragraph
+makes it easier for a reader to perceive breaks in the text, but it is
+not as harsh to the eye as a completely blank line. Do \emph{not} fiddle
+with the indent or with the spacing between paragraphs!
+
+Along with the standard environments, this template offers
+\verb|paralist| for lists within paragraphs.
+%
+Here's a quick example: The American constitution speaks, among others, of
+%
+\begin{inparaenum}[(i)]
+  \item life
+  \item liberty
+  \item the pursuit of happiness.
+\end{inparaenum}
+%
+When writing a report, you hopefully have all of these.
+
+\subsection{Citations \& bibliography}
+
+Use the \verb|\autocite| command to cite literature. Do \emph{not} use
+citations in lieu of nouns. Hence, the following is generally frowned
+upon:
+%
+\begin{quote}
+  As~\autocite{Edelsbrunner10} shows, \dots
+\end{quote}
+%
+Instead, use this:
+%
+\begin{quote}
+  As previously shown~\autocite{Edelsbrunner10}, \dots
+\end{quote}
+%
+Or better:
+%
+\begin{quote}
+  As Edelsbrunner and Harer~\autocite{Edelsbrunner10} showed, \dots
+\end{quote}
+%
+You may also use special citation commands for the author names, e.g.\
+\verb|\citet| or \verb|\citep|, but this guide prefers typing the author
+names yourself.
+%
+It is also possible to use \verb|\autocites| to cite multiple authors.
+So we could also talk about previous work by Edelsbrunner et
+al.~\autocites{Edelsbrunner10, Edelsbrunner02}. Citations will be sorted
+automatically.
+
+Particular care should be take in order to properly format citations
+that you download from somewhere. Even Google Scholar is known to
+produce incorrect references.
+%
+When in doubt, consult the
+documentation\footnote{\url{https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management}}.
+The bibliography of this template also contains some examples of proper
+bibliography usage.
+
+\subsection{Text in other languages}
+
+Since this template uses \verb|babel| to support different languages, you can easily add ``foreign'' text by wrapping it in \verb|otherlanguage|:
+%
+\begin{quote}
+  \begin{otherlanguage*}{ngerman}
+    Uns ist in alten Geschichten viel Herrliches erzählt worden:
+    von ruhmvollen Helden und ihren schweren Kämpfen, von
+    höchstem Glück, von tiefstem Schmerz und von dem Heldenkampf
+    der tapferen Burgunden könnt Ihr jetzt eine herrliche
+    Geschichte vernehmen.
+  \end{otherlanguage*}
+\end{quote}
+%
+This works for all languages that have been used as optional arguments
+in the inclusion of the \verb|babel| package. At present, this only
+includes English~(the default language) and French:
+%
+\begin{quote}
+  \begin{otherlanguage*}{french}
+    Le roi Charles, notre empereur, le Grand, sept ans tous pleins
+    est resté dans l'Espagne: jusqu'à la mer il a conquis la terre
+    hautaine. Plus un château qui devant lui résiste, plus une muraille
+    à forcer, plus une cité, hormis Saragosse, qui est sur une
+    montagne. Le roi Marsile la tient, qui n'aime pas Dieu. C'est
+    Mahomet qu'il sert, Apollin qu'il prie. Il ne peut pas s'en garder:
+    le malheur l'atteindra. 
+  \end{otherlanguage*}
+\end{quote}
+%
+You may add other languages as well but should make sure that the main
+language of the document is the \emph{last} one that is specified, as it
+controls how things like the table of contents are named.
+
+\subsection{Other resources}
+
+Other resources comprise an excellent guide on how to write a seminar
+report\footnote{\url{http://gvv.mpi-inf.mpg.de/teaching/how_to_thesis/how_to_write_a_report_slussalek.pdf}},
+as well as Donald Knuth's lectures on mathematical
+writing\footnote{\url{http://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf}},
+although this last guide is more relevant for writing about, well,
+mathematics. There are also some good starting points about
+\emph{writing} papers and \emph{reading} them by Bob
+Laramee~\autocites{Laramee10,Laramee11}.
