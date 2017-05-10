@@ -170,7 +170,11 @@
 % Suppress warnings about page groups in PDFs. This is not justified
 % in most of the cases. I am pretty sure I am including my images in
 % the right manner.
-\pdfsuppresswarningpagegroup=1
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname pdfsuppresswarningpagegroup\endcsname\relax
+\else
+  \pdfsuppresswarningpagegroup=1\relax
+\fi
 
 \usepackage{subcaption}
 
