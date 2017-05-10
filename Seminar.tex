@@ -24,7 +24,11 @@
 %
 % If you write your report in German, you need to change the order.
 \usepackage[ngerman,french,english]{babel}
-\usepackage[utf8]{inputenc}
+
+\ifpdf
+  \usepackage[utf8]{inputenc}
+\fi
+
 \usepackage{csquotes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
