@@ -17,6 +17,10 @@
 \newcommand{\sNumber  }{24601}
 \newcommand{\sDate    }{\today}
 
+\usepackage{ifpdf}
+\usepackage{ifxetex}
+\usepackage{ifluatex}
+
 % Makes it possible to switch between different languages in the text
 % while keeping hyphenation rules correct. Should you add another one
 % in the list, please ensure that `english` is the last one. The last
@@ -25,8 +29,12 @@
 % If you write your report in German, you need to change the order.
 \usepackage[ngerman,french,english]{babel}
 
-\ifpdf
-  \usepackage[utf8]{inputenc}
+\ifxetex
+\else
+  \ifluatex
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
 \fi
 
 \usepackage{csquotes}
