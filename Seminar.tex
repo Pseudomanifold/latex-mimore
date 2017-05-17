@@ -1,13 +1,15 @@
-\documentclass[ paper=a4,
-                twoside,
-                pagesize,
-                11pt,
-                DIV=10,
-                BCOR=10mm,
-                cleardoublepage=empty,
-                numbers=noenddot,
-                titlepage,
-                toc=bibliography]{scrartcl}
+%\documentclass[ paper=a4,
+%                twoside,
+%                pagesize,
+%                11pt,
+%                DIV=10,
+%                BCOR=10mm,
+%                cleardoublepage=empty,
+%                numbers=noenddot,
+%                titlepage,
+%                toc=bibliography]{scrartcl}
+
+\documentclass{mimore}
 
 \newcommand{\sAuthor  }{John Doe}
 \newcommand{\sTitle   }{What's in a name?}
@@ -16,28 +18,6 @@
 \newcommand{\sCourse  }{Applied Computer Science~(M.Sc.)}
 \newcommand{\sNumber  }{24601}
 \newcommand{\sDate    }{\today}
-
-\usepackage{ifpdf}
-\usepackage{ifxetex}
-\usepackage{ifluatex}
-
-% Makes it possible to switch between different languages in the text
-% while keeping hyphenation rules correct. Should you add another one
-% in the list, please ensure that `english` is the last one. The last
-% language is used to control standard hyphenation.
-%
-% If you write your report in German, you need to change the order.
-\usepackage[ngerman,french,english]{babel}
-
-\ifxetex
-\else
-  \ifluatex
-  \else
-    \usepackage[utf8]{inputenc}
-  \fi
-\fi
-
-\usepackage{csquotes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
