@@ -12,9 +12,12 @@
 *.toc
 
 *.auxlock
+*.fls
+*.fdb_latexmk
 *.pgf-plot.*
 *-blx.bib
 *.run.xml
 
 *~
 *~*
+
