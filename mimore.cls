@@ -24,12 +24,22 @@
 % If you write your report in German, you need to change the order.
 \RequirePackage[ngerman,french,english]{babel}
 
+\newif\ifxetexorluatex
 \ifxetex
+  \xetexorluatextrue
 \else
   \ifluatex
+    \xetexorluatextrue
   \else
-    \RequirePackage[utf8]{inputenc}
+    \xetexorluatexfalse
   \fi
+\fi
+
+\ifxetexorluatex
+  \RequirePackage{fontspec}
+  \setmainfont{XCharter}
+\else
+  \RequirePackage[utf8]{inputenc}
 \fi
 
 \usepackage{csquotes}
