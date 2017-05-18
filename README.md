@@ -4,6 +4,9 @@ This repository contains a minimal & modern LaTeX template for reports
 that have to be written for courses at university. It assumes that the
 user is a student who has been given a certain topic.
 
+For the impatient or curious: [this is how the template looks
+like](Seminar.pdf).
+
 # Advantages
 
 This template aims to be&hellip;
