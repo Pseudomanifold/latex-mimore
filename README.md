@@ -1,4 +1,4 @@
-# `latex-mimore`: A minimal & modern template for reports
+# latex-mimore: A minimal & modern template for reports
 
 This repository contains a minimal & modern LaTeX template for reports
 that have to be written for courses at university. It assumes that the
