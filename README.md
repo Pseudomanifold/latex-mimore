@@ -40,6 +40,12 @@ distribution might already have this command. If so, you can use
 in the main directory of this repository in order to build the example
 file.
 
+# License
+
+The template uses the MIT license. Please see the file
+[`LICENSE.md`](LICENSE.md) in the main directory of the repository for
+more details.
+
 # Contributing
 
 If you require additional features, find some bugs, or just have some
